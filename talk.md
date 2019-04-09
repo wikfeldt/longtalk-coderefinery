@@ -6,10 +6,10 @@ class: middle, inverse
 
 #### <p align="right"> Albanova, April 2019 </p>
 
-<!--<img src="img/Logo_MONO_White-01.png" style="width: 100%;"/>-->
-<img src="img/Logo_COLOR_3D-01.png" style="width: 100%;"/>
-
+# Training researchers in modern code development tools and reproducible workflows
 #### Thor Wikfeldt (PDC Center for High Performance Computing, Stockholm)
+<img src="img/Logo_MONO_White-01.png" style="width: 100%;"/>
+
 
 
 ---
@@ -25,24 +25,14 @@ layout: false
 ### Partners powering CodeRefinery
 
 <img src="img/hpc_orgs.png" style="width: 100%;"/>
+<img src="img/estonia_computing.png" style="width: 20%;"/>
 
 
 ---
 
-<!-- ## The team -->
+### Meet the team 
 
-<img src="img/team.png" style="width: 95%;"/>
-
-<!--
-<img src="team/anne_fouilloux.jpg" style="width: 20%;"/>
-<img src="team/bjoern_lindi.jpg" style="width: 20%;"/>
-<img src="team/juho_lehtonen.jpg" style="width: 20%;"/>
-<img src="team/max_eckardt.jpg" style="width: 20%;"/>
-<img src="team/radovan_bast.jpg" style="width: 20%;"/>
-<img src="team/sabry_razick.jpg" style="width: 20%;"/>
-<img src="team/stefan_negru.jpg" style="width: 20%;"/>
-<img src="team/thor_wikfeldt.jpg" style="width: 20%;"/>
--->
+<img src="img/team.png" style="width: 80%;"/>
 
 ---
 
@@ -52,9 +42,17 @@ layout: false
 
 ---
 
-# The reproducibility crisis
+# Why CodeRefinery?
+
+<img src="img/Miracle.jpg" style="width: 90%;"/>
+
+---
+
+# Why CodeRefinery?
 
 <img src="img/reproducibility_nature.png" style="width: 90%;"/>
+
+[https://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.1997](https://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.1997)
 
 ---
 
@@ -64,55 +62,76 @@ layout: false
 
 ---
 
-layout: false
+# Software matters in research
 
-# What we do
+.emph[**Data** is part of research output]
 
-- Develop lesson material on best practices and tools for sustainable scientific software development
-- Deliver workshops around the Nordics
-  - 15 regular 3-day workshops, over 500 participants 
-  - Interactive, type-along lessons interspersed with exercises
+- Funding agencies often ask for a data management plan
 
-<img src="img/DSC_0634.JPG" style="width: 90%;"/>
+.emph[**Software** is part of research output]
+
+- Simulations which generate data
+- Control software for instruments
+- Post-processing of measurements
+- Data processing
+- Portals and apps
+- Spreadsheets
+- Scripts and tools which produce graphs and compute statistics
+
+Curiosity: Not too many projects consider a software management plan **yet**.
+
+Software development should consider .emph[FAIR principles], ideally from the start (https://www.nature.com/articles/sdata201618):
+.left-column[
+- .emph[**F**indable]
+- .emph[**A**ccessible]
+]
+.right-column[
+- .emph[**I**nteroperable]
+- .emph[**R**eusable]
+]
 
 ---
 
-# Where do we want to go?
+layout: false
 
-<div style="float: left; width: 50%;">
-<img src="img/workshop_map.png" style="width: 100%;"/>
+# Workshops
 
-</div>
-<div style="float: right; width: 50%;">
-<ul>
-<li> Build a network of instructors
-<li> 2
-<li> 3
-<li> 4
-</ul>
-</div>
+- We teach lesson material on best practices and modern tools for collaborative code development and workflows
+- Three-day workshops: interactive teaching with type-along demos and frequent exercises. 
+
+<img src="img/DSC_0634.JPG" style="width: 90%;"/>
 
 ---
 
 # What we teach
 
 *All* workshops include:
-<div style="float: left; width: 50%;">
-<ul>
-<li> Version control (Git)
-<li> Automated testing 
-<li> Code coverage analysis
-<li> Modular code development
-</ul>
-</div>
-<div style="float: right; width: 50%;">
-<ul>
-<li> Jupyter Notebooks
-<li> Reproducible research
-<li> Documentation
-<li> Software licensing
-</ul>
-</div>
+.left-column[
+
+- [Introduction to version control](https://coderefinery.github.io/git-intro/) 
+- [Collaborative version control](https://coderefinery.github.io/git-collaborative/)
+- [Automated testing](https://coderefinery.github.io/testing/)
+- [Modular code development](http://cicero.xyz/v3/remark/0.14.0/github.com/coderefinery/modular-code-development/master/talk.md)
+]
+.right-column[
+- [Jupyter Notebooks](https://github.com/coderefinery/jupyter)
+- [Reproducible research](https://coderefinery.github.io/reproducible-research/)
+- [Documentation](https://coderefinery.github.io/documentation/)
+- [Social coding](http://cicero.xyz/v3/remark/0.14.0/github.com/coderefinery/social-coding/master/talk.md)
+]
+
+
+*Some* workshops include:
+
+.left-column[
+- [Integrated development environments](https://coderefinery.github.io/IDEs/)
+- [Git branch design](https://coderefinery.github.io/git-branch-design/)
+]
+
+.right-column[
+- [Building portable code with CMake](https://coderefinery.github.io/cmake/)
+- [Mixed Martial Arts: Interfacing Fortran, C, C++, and Python](https://coderefinery.github.io/mma/)
+]
 
 ---
 
@@ -194,6 +213,23 @@ mylib-1.3.3_wk_13.8.08.tgz      somecode-20.7.09.tgz
 <li> Feedback on WIP (work in progress) changes 
 <li> Typically coupled with automated testing 
 </div>
+
+---
+
+## Code repository hosting for Nordic research software
+
+CodeRefinery provides a code repository hosting service that is open and free for 
+all researchers based in universities and research institutes from Nordic countries.
+
+> https://source.coderefinery.org/
+
+Based on a GitLab instance, and targets researchers who:
+
+- prefer to keep their code in a private repository until it gets published and prefer the corresponding data to stay in the Nordics and remain under an academic governance
+- are careful to not share code or data with a for-profit company (not implying here that the company would use it without asking)
+- host their code on local hard drives and look for a better place to host and collaborate but prefer the code to remain private
+- run their own GitLab service or other repository hosting server but struggle to keep it up to date and backed up
+- need one place to host public and private repositories
 
 ---
 
@@ -303,3 +339,20 @@ CodeRefinery lesson material is open source (CC BY-SA 4.0) and can be used/impro
 <li> Slides on https://github.com/wikfeldt/shorttalk-coderefinery 
 </ul>
 </div>
+
+---
+
+# Where do we want to go?
+
+<div style="float: left; width: 50%;">
+<img src="img/workshop_map.png" style="width: 100%;"/>
+
+</div>
+<div style="float: right; width: 50%;">
+<ul>
+<li> Reach sustainability: minimally funded project with self-hosted workshops
+<li> Build a network of volunteer instructors
+<li> 4
+</ul>
+</div>
+
