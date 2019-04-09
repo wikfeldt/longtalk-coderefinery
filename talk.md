@@ -108,7 +108,7 @@ layout: false
 *All* workshops include:
 .left-column[
 
-- [Introduction to version control](https://coderefinery.github.io/git-intro/) 
+- [Introduction to version control](https://coderefinery.github.io/git-solo/) 
 - [Collaborative version control](https://coderefinery.github.io/git-collaborative/)
 - [Automated testing](https://coderefinery.github.io/testing/)
 - [Modular code development](http://cicero.xyz/v3/remark/0.14.0/github.com/coderefinery/modular-code-development/master/talk.md)
@@ -285,14 +285,6 @@ Why is project documentation important?
 - You may want others to contribute to the code.
 - Shield your limited time and let the documentation answer FAQs.
 
-Best practices:
-- Division into tutorials, FAQs, and keyword reference
-- Documentation should be placed and tracked close to the source code
-  - should be versioned together with the code
-- Use a standard markup language (RST or Markdown)
-- Information for contributors
-- Installation instructions
-
 What we teach:
 - Host source code with documentation sources on GitHub/GitLab/source.coderefinery.org
 - Set up post-receive hook to trigger automatic rebuild of your
@@ -300,14 +292,37 @@ What we teach:
 
 ---
 
+## Jupyter 
+
+- A Jupyter Notebook allows the researcher to document 
+  day-to-day work and interweave results, figures, equations, 
+  ideas, and hypotheses with code, creating a *computational narrative*.
+- Supports many different programming languages - can speed up code-test-debug cycle.
+
+<img src="img/jlab.png" style="width: 50%;"/>
+
+Why teach Jupyter?
+- It is taking over the world (at least within data science: https://www.nature.com/articles/d41586-018-07196-1)
+- Reproducibility 
+
+---
+
+# Our participants
+
+Workshop participants range from undergraduate students to full professors, 
+and come from a variety of academic disciplines.
+
+<img src="img/disciplines_positions.png" style="width: 110%;"/>
+
+---
+
 # Impact
 
-- Results from 3-6 month post-workshop survey
+The long-term impact of CodeRefinery workshops is measured through a 
+post-workshop survey which is sent out to all former participants 
+3-6 months after attending a workshop.
 
-<img src="img/tools_heatmap.png" style="width: 47%;"/>
-<img src="img/yes_no_questions.png" style="width: 45%;"/>
-
-- Encouraging results!
+<img src="img/heatmap_yesno.png" style="width: 100%;"/>
 
 ---
 
