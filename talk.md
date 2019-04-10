@@ -11,7 +11,6 @@ class: middle, inverse
 <img src="img/Logo_MONO_White-01.png" style="width: 100%;"/>
 
 
-
 ---
 
 layout: false
@@ -22,7 +21,7 @@ layout: false
 - Started in September 2016, second phase started Oct 2018
 - 3 FTEs spread around the Nordics
 
-### Partners powering CodeRefinery
+### Sponsors powering CodeRefinery
 
 <img src="img/hpc_orgs.png" style="width: 100%;"/>
 <img src="img/estonia_computing.png" style="width: 20%;"/>
@@ -96,10 +95,39 @@ layout: false
 
 # Workshops
 
+.left-column[
+<img src="img/workshop_map.png" style="width: 100%;"/>
+]
+
+.right-column[
+
+- ~20 workshops since Dec 2016
+
+- Over 500 participants
+
+- 3-4 instructors per workshop
+
+- We try to recruit local workshop helpers
+
+]
+
+---
+
+# Workshops 
+
 - We teach lesson material on best practices and modern tools for collaborative code development and workflows
 - Three-day workshops: interactive teaching with type-along demos and frequent exercises. 
 
 <img src="img/DSC_0634.JPG" style="width: 90%;"/>
+
+---
+
+# Our participants
+
+Workshop participants range from undergraduate students to full professors, 
+and come from a variety of academic disciplines.
+
+<img src="img/disciplines_positions.png" style="width: 110%;"/>
 
 ---
 
@@ -177,7 +205,7 @@ mylib-1.3.3_wk_13.8.08.tgz      somecode-20.7.09.tgz
 ### Reproduciblity
 
 - How do you indicate which version of your code you have used in your paper?
-- *Hmmm, I wonder when this bug got introduced..."*
+- "*Hmmm, I wonder when this bug got introduced...*"
 
 ---
 
@@ -192,6 +220,8 @@ mylib-1.3.3_wk_13.8.08.tgz      somecode-20.7.09.tgz
   - tool to merge development branches for you
 
 <img src="img/git-collaborative.svg" style="width: 80%;"/>
+
+- We teach the free and open source VCS tool **Git**
 
 ---
 
@@ -233,7 +263,7 @@ Based on a GitLab instance, and targets researchers who:
 
 ---
 
-## Testing
+## Why testing?
 
 <div style="float: left; width: 50%;">
 <img src="img/suit.jpg" style="width: 90%;"/>
@@ -286,33 +316,27 @@ Why is project documentation important?
 - Shield your limited time and let the documentation answer FAQs.
 
 What we teach:
-- Host source code with documentation sources on GitHub/GitLab/source.coderefinery.org
-- Set up post-receive hook to trigger automatic rebuild of your
+- Writing documentation in markdown or RST
+  - Should be easy to write 	   
+- Host documentation *along with source code* on GitHub/GitLab/source.coderefinery.org
+  - Documentation should be *versioned* in tandem with code
+  - One shouldn't need to jump through hoops to write documentation
+- Set up git hook to trigger automatic rebuild of your
   documentation on Read the Docs after each `git push`
 
 ---
 
 ## Jupyter 
 
-- A Jupyter Notebook allows the researcher to document 
-  day-to-day work and interweave results, figures, equations, 
-  ideas, and hypotheses with code, creating a *computational narrative*.
-- Supports many different programming languages - can speed up code-test-debug cycle.
+A Jupyter Notebook allows the researcher to document 
+day-to-day work and interweave results, figures, equations, 
+ideas, and hypotheses with code, creating a *computational narrative*.
 
 <img src="img/jlab.png" style="width: 50%;"/>
 
 Why teach Jupyter?
 - It is taking over the world (at least within data science: https://www.nature.com/articles/d41586-018-07196-1)
-- Reproducibility 
-
----
-
-# Our participants
-
-Workshop participants range from undergraduate students to full professors, 
-and come from a variety of academic disciplines.
-
-<img src="img/disciplines_positions.png" style="width: 110%;"/>
+- Reproducibility (e.g., https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks#reproducible-academic-publications)
 
 ---
 
@@ -326,48 +350,92 @@ post-workshop survey which is sent out to all former participants
 
 ---
 
-## Invitation
+# Impact
 
-CodeRefinery lesson material is open source (CC BY-SA 4.0) and can be used/improved by anyone
-  - [coderefinery.org/lessons/](http://coderefinery.org/lessons/)
-  - All feedback highly welcome!
-  - github.com/coderefinery, @coderefine, support@coderefinery.org
----
-
-# Acknowledgments
-
-
-<div style="float: left; width: 25%;">
-<img src="img/pdc_logo.png" style="width: 70%;"/>
-</div>
-<div style="float: right; width: 40%;">
-<img src="img/Logo_COLOR_3D-01.png" style="width: 150%;"/>
-</div>
-<div style="float: right; width: 30%;">
-<br>
-<img src="img/NEIC_logo_screen_black.png" style="width: 100%;"/>
-</div>
-
-<div>
-<ul> 
-<li> This presentation was created in cicero (http://cicero.xyz/) 
-<li> Slides on https://github.com/wikfeldt/shorttalk-coderefinery 
-</ul>
-</div>
+<img src="img/feedback.png" style="width: 110%;"/>
 
 ---
 
 # Where do we want to go?
 
-<div style="float: left; width: 50%;">
-<img src="img/workshop_map.png" style="width: 100%;"/>
+- CodeRefinery will not be funded indefinitely, will need to reach **sustainability**.
+- [The Carpentries](https://carpentries.org/) organization has succeeded:
+  - Delivers 100s of workshops per year on foundational coding and data science skills.
+  - Taught by volunteer instructors who have completed Carpentry instructor training.
 
-</div>
-<div style="float: right; width: 50%;">
-<ul>
-<li> Reach sustainability: minimally funded project with self-hosted workshops
-<li> Build a network of volunteer instructors
-<li> 4
-</ul>
-</div>
+We envision:
+- Growing a community of instructors and establishing partnerships with universities and institutions.
+- All lesson material to be maintained by the community and volunteers.
+- Developing an instructor training program tailored to the CodeRefinery material.
+- Travel and accommodation for workshops to be be financed by the hosting institution.
+
+---
+
+# Nordic Research Software Engineers
+
+CodeRefinery is more than just a teaching program – 
+it is also about catalysing and building a community of 
+Nordic Research Software Engineers (http://nordic-rse.org). 
+We aim to:
+- Serve as a Nordic hub for research software engineers.
+- Connect with thriving RSE communities in the UK, Germany, Netherlands
+- Organize a Nordic RSE conference in 2020.
+- Organize hackathons, workshops and other events for RSEs.
+
+<img src="img/RSE_logo.jpg" style="width: 60%;"/>
+
+
+
+---
+
+# Invitation
+
+CodeRefinery lesson material is open source and can be freely used/improved:
+ - http://coderefinery.org/lessons/
+ - All feedback highly welcome!
+ - https://github.com/coderefinery
+
+Get in touch through <support@coderefinery.org> to:
+- Request a CodeRefinery workshop.
+- Sign up as a helper/instructor for CodeRefinery workshops.
+- Ask questions about using CodeRefinery material in your own courses.
+- Get further information on becoming a CodeRefinery partner.
+- Request access to the repository hosting platform source.coderefinery.org.
+
+To get notified of planned workshops in your area: 
+- see "Notify me" on https://coderefinery.org/workshops/
+
+We discuss in the open and you can join us on https://coderefinery.zulipchat.com 
+- You can listen in, follow certain threads, participate, and influence.
+
+
+---
+
+# Acknowledgments
+
+- Team members: 
+  - Anne Fouilloux, UIO University of Oslo, Norway
+  - Bjørn Lindi, NTNU, Trondheim, Norway
+  - Juho Lehtonen, CSC-IT center for science, Finland
+  - Max R. Eckardt, Datakuben @ University of Southern Denmark
+  - Radovan Bast (project manager), UiT The Arctic University of Norway
+  - Sabry Razick, UIO University of Oslo, Norway
+  - Stefan Negru, CSC- IT center for science, Finland
+
+- This presentation was created in cicero (http://cicero.xyz/) 
+- Slides on https://github.com/wikfeldt/longtalk-coderefinery
+
+.left-column[
+<img src="img/pdc_logo.png" style="width: 50%;"/>
+]
+.right-column[
+<img src="img/NEIC_logo_screen_black.png" style="width: 100%;"/>
+]
+
+---
+
+# Thank you for the attention!
+
+<img src="img/Logo_COLOR_3D-01.png" style="width: 100%;"/>
+
 
