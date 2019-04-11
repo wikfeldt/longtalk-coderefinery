@@ -69,15 +69,8 @@ layout: false
 
 .emph[**Software** is part of research output]
 
-- Simulations which generate data
-- Control software for instruments
-- Post-processing of measurements
-- Data processing
-- Portals and apps
-- Spreadsheets
-- Scripts and tools which produce graphs and compute statistics
-
-Curiosity: Not too many projects consider a software management plan **yet**.
+- Simulation/modeling code, control software for instruments, data processing, spreadsheets, scripts for visualization and statistics...
+- Not too many projects consider a software management plan **yet**.
 
 Software development should consider .emph[FAIR principles], ideally from the start (https://www.nature.com/articles/sdata201618):
 .left-column[
@@ -88,6 +81,10 @@ Software development should consider .emph[FAIR principles], ideally from the st
 - .emph[**I**nteroperable]
 - .emph[**R**eusable]
 ]
+
+*The FAIR Guiding Principles for scientific **data** management and stewardship* (https://www.nature.com/articles/sdata201618)
+
+For a discussion of FAIR in the context of software, see https://softdev4research.github.io/4OSS-lesson/.
 
 ---
 
@@ -115,8 +112,9 @@ layout: false
 
 # Workshops 
 
-- We teach lesson material on best practices and modern tools for collaborative code development and workflows
-- Three-day workshops: interactive teaching with type-along demos and frequent exercises. 
+- We teach lesson material on best practices and modern tools for collaborative code development and workflows.
+- Interactive teaching with type-along demos and frequent exercises during three-day 
+  workshops.
 
 <img src="img/DSC_0634.JPG" style="width: 90%;"/>
 
@@ -299,7 +297,50 @@ def test_fahrenheit_to_celsius():
     assert abs(temp_c - expected_result) < 1.0e-6
 ```
 
+---
+
+## Testing in a nutshell
+
+```python
+def fahrenheit_to_celsius(temp_f):
+    """
+    Converts temperature in Fahrenheit
+    to Celsius.
+    """
+    temp_c = (temp_f - 32.0) * (5.0/9.0)
+    return temp_c
+
+
+def test_fahrenheit_to_celsius():
+    temp_c = fahrenheit_to_celsius(temp_f=100.0)
+    expected_result = 37.777777
+    assert abs(temp_c - expected_result) < 1.0e-6
+```
+
+<img src="img/automated_test.png" style="width: 90%;"/>
+
+---
+
+## Testing in a nutshell
+
+```python
+def fahrenheit_to_celsius(temp_f):
+    """
+    Converts temperature in Fahrenheit
+    to Celsius.
+    """
+    temp_c = (temp_f - 32.0) * (5.0/9.0)
+    return temp_c
+
+
+def test_fahrenheit_to_celsius():
+    temp_c = fahrenheit_to_celsius(temp_f=100.0)
+    expected_result = 37.777777
+    assert abs(temp_c - expected_result) < 1.0e-6
+```
+
 - Tests make sure that expected functionality is preserved
+- Tests can easily be automated
 - Tests help users of your code
 - Tests help developers of your code
 - Tests guide towards modular code structure
@@ -307,9 +348,8 @@ def test_fahrenheit_to_celsius():
 
 ---
 
-## Documentation
+## Why documentation?
 
-Why is project documentation important?
 - You will probably use your code in the future and may forget details.
 - You may want others to use your code (almost impossible without documentation).
 - You may want others to contribute to the code.
@@ -317,7 +357,17 @@ Why is project documentation important?
 
 What we teach:
 - Writing documentation in markdown or RST
-  - Should be easy to write 	   
+
+```
+# This is a section in Markdown   This is a section in RST
+                                  ========================
+## This is a subsection           This is a subsection
+                                  --------------------
+A list:                           A list:
+- **bold text**                   - **bold text**
+- *emphasized text*               - *emphasized text*
+```
+
 - Host documentation *along with source code* on GitHub/GitLab/source.coderefinery.org
   - Documentation should be *versioned* in tandem with code
   - One shouldn't need to jump through hoops to write documentation
@@ -367,7 +417,7 @@ We envision:
 - Growing a community of instructors and establishing partnerships with universities and institutions.
 - All lesson material to be maintained by the community and volunteers.
 - Developing an instructor training program tailored to the CodeRefinery material.
-- Travel and accommodation for workshops to be be financed by the hosting institution.
+- Travel and accommodation for workshops to be financed by the hosting institution.
 
 ---
 
@@ -434,7 +484,7 @@ We discuss in the open and you can join us on https://coderefinery.zulipchat.com
 
 ---
 
-# Thank you for the attention!
+# Thank you for your attention!
 
 <img src="img/Logo_COLOR_3D-01.png" style="width: 100%;"/>
 
